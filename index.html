@@ -750,7 +750,6 @@
             .hero-gif-wrap { width: 95vw; height: 82%; }
             .project-img-col { display: none; }
             .project-img-grid { grid-template-columns: 1fr; height: clamp(180px,45vw,280px); }
-            /* FIX 5: restore natural display on mobile instead of hardcoded flex */
             .project-card-header { grid-template-columns: 1fr; }
             .live-btn { margin-top: 0; align-self: flex-start; }
             .project-item { height: auto; min-height: auto; position: relative; top: auto !important; padding: clamp(1rem,3vw,2rem) 0; display: block; }
@@ -762,7 +761,6 @@
             .tool-tile { width: 50px; height: 50px; }
             .tool-tile img { width: 26px; height: 26px; }
             #scroll-top-btn { bottom: 1.25rem; right: 1.25rem; width: 40px; height: 40px; }
-            /* FIX 2: hero heading on tiny screens */
             .hero-heading-wrap h1 { white-space: normal !important; font-size: clamp(8vw,14vw,17vw) !important; }
         }
 
@@ -773,7 +771,6 @@
             .hero-gif-wrap { width: 100vw; height: 80%; }
         }
 
-        /* FIX 7: contact grid tablet alignment */
         @media (min-width: 641px) and (max-width: 1024px) {
             .contact-grid { grid-template-columns: 1fr 1fr; gap: 2rem; align-items: start; }
             .contact-gif-wrap { height: clamp(280px,38vw,480px); }
@@ -857,10 +854,9 @@
     <!-- ══════════ HERO ══════════ -->
     <section id="hero">
         <div class="hero-gif-wrap">
-            <img id="heroGif" src="girl-waving.gif" alt="Hui Yi" decoding="async" onerror="this.style.display='none'" />
+            <img id="heroGif" src="portfolio/girl-waving.gif" alt="Hui Yi" decoding="async" onerror="this.style.display='none'" />
         </div>
 
-        <!-- FIX 1: Added nav-contact-link class for mobile hiding -->
         <nav class="anim-0" style="display:flex;justify-content:space-between;align-items:center;padding:1.5rem 2.5rem;position:relative;z-index:20">
             <div class="desk-nav-links">
                 <a href="#about"    style="text-decoration:none;color:inherit;text-transform:uppercase;letter-spacing:0.1em;font-family:'Kanit',sans-serif;font-size:clamp(0.75rem,1.2vw,1rem);opacity:0.85;transition:opacity 0.2s" onmouseover="this.style.opacity='0.4'" onmouseout="this.style.opacity='0.85'">About</a>
@@ -870,11 +866,9 @@
             <button class="burger-btn" id="burgerBtn" aria-label="Open menu" aria-expanded="false" onclick="toggleMobileNav()">
                 <span></span><span></span><span></span>
             </button>
-            <!-- FIX 1: nav-contact-link class added so it hides on mobile -->
             <a href="#contact" class="nav-contact-link" style="text-decoration:none;color:inherit;text-transform:uppercase;letter-spacing:0.1em;font-family:'Kanit',sans-serif;font-size:clamp(0.75rem,1.2vw,1rem);opacity:0.85;transition:opacity 0.2s" onmouseover="this.style.opacity='0.4'" onmouseout="this.style.opacity='0.85'">Contact</a>
         </nav>
 
-        <!-- FIX 2: hero-heading-wrap class added for responsive targeting -->
         <div class="hero-heading-wrap anim-1" style="overflow:hidden;padding:0 2.5rem;margin-top:-0.5rem;position:relative;z-index:5">
             <h1 class="hero-heading" style="font-weight:900;text-transform:uppercase;letter-spacing:-0.02em;line-height:0.9;white-space:nowrap;font-size:clamp(10vw,14vw,17vw)">
                 Hi, I'm Hui Yi
@@ -894,28 +888,27 @@
         </div>
     </section>
 
-    <!-- ══════════ MARQUEE IMAGES ══════════ -->
+    <!-- ══════════ MARQUEE IMAGES (portfolio prefix added) ══════════ -->
     <section style="background:#0C0C0C;overflow:hidden;padding:3.5rem 0 2.5rem">
         <div id="row1" style="display:flex;gap:12px;margin-bottom:12px;will-change:transform">
-            <img src="B1.png" alt="" style="flex-shrink:0;width:clamp(200px,22vw,360px);height:clamp(120px,13vw,200px);border-radius:14px;object-fit:cover" loading="lazy"/>
-            <img src="F1.png" alt="" style="flex-shrink:0;width:clamp(200px,22vw,360px);height:clamp(120px,13vw,200px);border-radius:14px;object-fit:cover" loading="lazy"/>
-            <img src="G1.png" alt="" style="flex-shrink:0;width:clamp(200px,22vw,360px);height:clamp(120px,13vw,200px);border-radius:14px;object-fit:cover" loading="lazy"/>
-            <img src="T1.png" alt="" style="flex-shrink:0;width:clamp(200px,22vw,360px);height:clamp(120px,13vw,200px);border-radius:14px;object-fit:cover" loading="lazy"/>
-            <img src="B2.png" alt="" style="flex-shrink:0;width:clamp(200px,22vw,360px);height:clamp(120px,13vw,200px);border-radius:14px;object-fit:cover" loading="lazy"/>
-            <img src="F2.png" alt="" style="flex-shrink:0;width:clamp(200px,22vw,360px);height:clamp(120px,13vw,200px);border-radius:14px;object-fit:cover" loading="lazy"/>
-            <img src="G2.png" alt="" style="flex-shrink:0;width:clamp(200px,22vw,360px);height:clamp(120px,13vw,200px);border-radius:14px;object-fit:cover" loading="lazy"/>
-            <img src="T2.png" alt="" style="flex-shrink:0;width:clamp(200px,22vw,360px);height:clamp(120px,13vw,200px);border-radius:14px;object-fit:cover" loading="lazy"/>
-            
+            <img src="portfolio/B1.png" alt="" style="flex-shrink:0;width:clamp(200px,22vw,360px);height:clamp(120px,13vw,200px);border-radius:14px;object-fit:cover" loading="lazy"/>
+            <img src="portfolio/F1.png" alt="" style="flex-shrink:0;width:clamp(200px,22vw,360px);height:clamp(120px,13vw,200px);border-radius:14px;object-fit:cover" loading="lazy"/>
+            <img src="portfolio/G1.png" alt="" style="flex-shrink:0;width:clamp(200px,22vw,360px);height:clamp(120px,13vw,200px);border-radius:14px;object-fit:cover" loading="lazy"/>
+            <img src="portfolio/T1.png" alt="" style="flex-shrink:0;width:clamp(200px,22vw,360px);height:clamp(120px,13vw,200px);border-radius:14px;object-fit:cover" loading="lazy"/>
+            <img src="portfolio/B2.png" alt="" style="flex-shrink:0;width:clamp(200px,22vw,360px);height:clamp(120px,13vw,200px);border-radius:14px;object-fit:cover" loading="lazy"/>
+            <img src="portfolio/F2.png" alt="" style="flex-shrink:0;width:clamp(200px,22vw,360px);height:clamp(120px,13vw,200px);border-radius:14px;object-fit:cover" loading="lazy"/>
+            <img src="portfolio/G2.png" alt="" style="flex-shrink:0;width:clamp(200px,22vw,360px);height:clamp(120px,13vw,200px);border-radius:14px;object-fit:cover" loading="lazy"/>
+            <img src="portfolio/T2.png" alt="" style="flex-shrink:0;width:clamp(200px,22vw,360px);height:clamp(120px,13vw,200px);border-radius:14px;object-fit:cover" loading="lazy"/>   
         </div>
         <div id="row2" style="display:flex;gap:12px;will-change:transform">
-            <img src="B3.png" alt="" style="flex-shrink:0;width:clamp(200px,22vw,360px);height:clamp(120px,13vw,200px);border-radius:14px;object-fit:cover" loading="lazy"/>
-            <img src="F3.png" alt="" style="flex-shrink:0;width:clamp(200px,22vw,360px);height:clamp(120px,13vw,200px);border-radius:14px;object-fit:cover" loading="lazy"/>
-            <img src="G3.png" alt="" style="flex-shrink:0;width:clamp(200px,22vw,360px);height:clamp(120px,13vw,200px);border-radius:14px;object-fit:cover" loading="lazy"/>
-            <img src="T3.png" alt="" style="flex-shrink:0;width:clamp(200px,22vw,360px);height:clamp(120px,13vw,200px);border-radius:14px;object-fit:cover" loading="lazy"/>
-            <img src="B4.png" alt="" style="flex-shrink:0;width:clamp(200px,22vw,360px);height:clamp(120px,13vw,200px);border-radius:14px;object-fit:cover" loading="lazy"/>
-            <img src="F4.png" alt="" style="flex-shrink:0;width:clamp(200px,22vw,360px);height:clamp(120px,13vw,200px);border-radius:14px;object-fit:cover" loading="lazy"/>
-            <img src="G4.png" alt="" style="flex-shrink:0;width:clamp(200px,22vw,360px);height:clamp(120px,13vw,200px);border-radius:14px;object-fit:cover" loading="lazy"/>
-            <img src="T4.png" alt="" style="flex-shrink:0;width:clamp(200px,22vw,360px);height:clamp(120px,13vw,200px);border-radius:14px;object-fit:cover" loading="lazy"/>
+            <img src="portfolio/B3.png" alt="" style="flex-shrink:0;width:clamp(200px,22vw,360px);height:clamp(120px,13vw,200px);border-radius:14px;object-fit:cover" loading="lazy"/>
+            <img src="portfolio/F3.png" alt="" style="flex-shrink:0;width:clamp(200px,22vw,360px);height:clamp(120px,13vw,200px);border-radius:14px;object-fit:cover" loading="lazy"/>
+            <img src="portfolio/G3.png" alt="" style="flex-shrink:0;width:clamp(200px,22vw,360px);height:clamp(120px,13vw,200px);border-radius:14px;object-fit:cover" loading="lazy"/>
+            <img src="portfolio/T3.png" alt="" style="flex-shrink:0;width:clamp(200px,22vw,360px);height:clamp(120px,13vw,200px);border-radius:14px;object-fit:cover" loading="lazy"/>
+            <img src="portfolio/B4.png" alt="" style="flex-shrink:0;width:clamp(200px,22vw,360px);height:clamp(120px,13vw,200px);border-radius:14px;object-fit:cover" loading="lazy"/>
+            <img src="portfolio/F4.png" alt="" style="flex-shrink:0;width:clamp(200px,22vw,360px);height:clamp(120px,13vw,200px);border-radius:14px;object-fit:cover" loading="lazy"/>
+            <img src="portfolio/G4.png" alt="" style="flex-shrink:0;width:clamp(200px,22vw,360px);height:clamp(120px,13vw,200px);border-radius:14px;object-fit:cover" loading="lazy"/>
+            <img src="portfolio/T4.png" alt="" style="flex-shrink:0;width:clamp(200px,22vw,360px);height:clamp(120px,13vw,200px);border-radius:14px;object-fit:cover" loading="lazy"/>
         </div>
     </section>
     <!-- ══════════ ABOUT ══════════ -->
@@ -928,7 +921,7 @@
             <div id="about-grid">
                 <!-- COL 1: BACKGROUND -->
                 <div class="ab-card ab-tall">
-                    <video autoplay loop muted playsinline class="ab-card-video" style="opacity:0.2" src="working.mp4"></video>
+                    <video autoplay loop muted playsinline class="ab-card-video" style="opacity:0.2" src="portfolio/working.mp4"></video>
                     <div class="ab-card-gradient"></div>
                     <div class="ab-tall-label">
                         <svg viewBox="0 0 24 24"><path d="M12 3l1.5 4.5H18l-3.75 2.7 1.5 4.5L12 12l-3.75 2.7 1.5-4.5L6 7.5h4.5z"/></svg>
@@ -1009,8 +1002,7 @@
                 <!-- COL 3: SOFTWARE + REACH -->
                 <div class="ab-right">
                     <div class="ab-sw">
-                        <!-- FIX 6: img using ab-card-video class is fine, just ensure edu.png exists -->
-                        <img class="ab-card-video" style="opacity:0.28" src="edu.png" alt="background" />
+                        <img class="ab-card-video" style="opacity:0.28" src="portfolio/edu.png" alt="background" />
                         <div class="ab-sw-inner">
                             <div class="ab-sw-label">
                                 <svg viewBox="0 0 24 24"><path d="M12 3l1.5 4.5H18l-3.75 2.7 1.5 4.5L12 12l-3.75 2.7 1.5-4.5L6 7.5h4.5z"/></svg>
@@ -1203,7 +1195,7 @@
         </div>
     </div>
 
-    <!-- ══════════ PROJECTS ══════════ -->
+    <!-- ══════════ PROJECTS (all image src paths prefixed with portfolio/) ══════════ -->
     <section id="projects">
         <div id="projects-header" class="fade-in">
             <h2 class="hero-heading" style="font-weight:900;text-transform:uppercase;line-height:0.9;letter-spacing:-0.02em;margin-bottom:clamp(0.6rem,1.5vw,1.2rem);font-size:clamp(3rem,10vw,120px)">Selected Work</h2>
@@ -1230,7 +1222,7 @@
                             category: 'UI/UX • Branding • Web Design',
                             description: 'Design and development of multiple responsive landing pages for different companies, along with supporting brand identity work including logo exploration and visual direction. Focused on creating clean, structured interfaces that adapt across devices.',
                             tags: ['Brand Identity','Logo Design','Landing Pages','Responsive Design','UI/UX Design'],
-                            images: ['B5.png','B4.png','B6.png','B2.png','B7.png','B8.png']
+                            images: ['portfolio/B5.png','portfolio/B4.png','portfolio/B6.png','portfolio/B2.png','portfolio/B7.png','portfolio/B8.png']
                         })">
                             <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
                             View Project
@@ -1238,13 +1230,11 @@
                     </div>
                     <div class="project-img-grid">
                         <div class="project-img-col">
-                            <img src="B1.png" alt="Brand 1" loading="lazy"/>
-                            <img src="B7.png" alt="Brand 2" loading="lazy"/>
+                            <img src="portfolio/B1.png" alt="Brand 1" loading="lazy"/>
+                            <img src="portfolio/B7.png" alt="Brand 2" loading="lazy"/>
                         </div>
-                        <!-- FIX 3: fixed broken alt attribute syntax -->
-                        <img class="project-img-main" src="B3.png" alt="Brand hero" loading="lazy"/>
+                        <img class="project-img-main" src="portfolio/B3.png" alt="Brand hero" loading="lazy"/>
                     </div>
-                    <!-- FIX 4: removed trailing comma from tag text -->
                     <div class="project-tags">
                         <span class="project-tag">Brand Identity</span>
                         <span class="project-tag">Logo Design</span>
@@ -1264,13 +1254,12 @@
                             <span class="project-cat">Trading Platform & Employee System Design</span>
                             <span class="project-title">Dashboard • Web Application • System Design</span>
                         </div>
-                        <!-- FIX 4: removed trailing commas from tag strings -->
                         <button class="live-btn" onclick="openModal({
                             title: 'Dashboard • Web Application • System Design',
                             category: 'Trading Platform &amp; Employee System Design',
                             description: 'Design of a trading platform (TradersRoom) and an internal employee management system with a focus on usability, structured workflows, and clear information hierarchy. Built to support daily operations through organized dashboards and scalable interface components.',
                             tags: ['Dashboard Design','Web App','Admin Panel','Data Visualization','Fintech'],
-                            images: ['T1.png','T2.png','T3.png','T4.png','T5.png']
+                            images: ['portfolio/T1.png','portfolio/T2.png','portfolio/T3.png','portfolio/T4.png','portfolio/T5.png']
                         })">
                             <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
                             View Project
@@ -1278,10 +1267,10 @@
                     </div>
                     <div class="project-img-grid">
                         <div class="project-img-col">
-                            <img src="T5.png" alt="UI 1" loading="lazy"/>
-                            <img src="T3.png" alt="UI 2" loading="lazy"/>
+                            <img src="portfolio/T5.png" alt="UI 1" loading="lazy"/>
+                            <img src="portfolio/T3.png" alt="UI 2" loading="lazy"/>
                         </div>
-                        <img class="project-img-main" src="T1.png" alt="UI hero" loading="lazy"/>
+                        <img class="project-img-main" src="portfolio/T1.png" alt="UI hero" loading="lazy"/>
                     </div>
                     <div class="project-tags">
                         <span class="project-tag">Dashboard Design</span>
@@ -1294,7 +1283,7 @@
                 </div>
             </div>
 
-            <!-- CARD 3 — videos now actually render in carousel -->
+            <!-- CARD 3 -->
             <div class="project-item fade-in" data-category="3">
                 <div class="project-card-jack">
                     <div class="project-card-header">
@@ -1307,8 +1296,8 @@
                             category: 'Marketing Content &amp; Visual Production',
                             description: 'Creation of marketing materials including fintech promotional videos, festival campaign banners, and image editing work. Focused on maintaining visual consistency, clear messaging, and adapting content across different campaign needs and formats.',
                             tags: ['Marketing Design','Fintech Promo','Festival Banners','Video Editing','Banner Design'],
-                            images: ['F4.png','F5.png','F6.png','F1.png','F2.png','F3.png'],
-                            videos: ['v1.mp4','v2.mp4','v3.mp4']
+                            images: ['portfolio/F4.png','portfolio/F5.png','portfolio/F6.png','portfolio/F1.png','portfolio/F2.png','portfolio/F3.png'],
+                            videos: ['portfolio/v1.mp4','portfolio/v2.mp4','portfolio/v3.mp4']
                         })">
                             <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
                             View Project
@@ -1316,10 +1305,10 @@
                     </div>
                     <div class="project-img-grid">
                         <div class="project-img-col">
-                            <img src="F1.png" alt="Motion 1" loading="lazy"/>
-                            <img src="F6.png" alt="Motion 2" loading="lazy"/>
+                            <img src="portfolio/F1.png" alt="Motion 1" loading="lazy"/>
+                            <img src="portfolio/F6.png" alt="Motion 2" loading="lazy"/>
                         </div>
-                        <img class="project-img-main" src="F2.png" alt="Motion hero" loading="lazy"/>
+                        <img class="project-img-main" src="portfolio/F2.png" alt="Motion hero" loading="lazy"/>
                     </div>
                     <div class="project-tags">
                         <span class="project-tag">Video Editing</span>
@@ -1342,7 +1331,7 @@
                             category: '3D &amp; Interactive Development',
                             description: 'Work involving 3D modeling, VR exploration, and game development. Focused on building interactive environments and assets with attention to structure, visual clarity, and real-time performance.',
                             tags: ['3D Modeling','VR Projects','Game Development','Asset Creation','Interactive Design','Environment Design'],
-                            images: ['G1.png','G2.png','G3.png','G4.png']
+                            images: ['portfolio/G1.png','portfolio/G2.png','portfolio/G3.png','portfolio/G4.png']
                         })">
                             <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
                             View Project
@@ -1350,10 +1339,10 @@
                     </div>
                     <div class="project-img-grid">
                         <div class="project-img-col">
-                            <img src="G1.png" alt="3D 1" loading="lazy"/>
-                            <img src="G4.png" alt="3D 2" loading="lazy"/>
+                            <img src="portfolio/G1.png" alt="3D 1" loading="lazy"/>
+                            <img src="portfolio/G4.png" alt="3D 2" loading="lazy"/>
                         </div>
-                        <img class="project-img-main" src="G3.png" alt="3D hero" loading="lazy"/>
+                        <img class="project-img-main" src="portfolio/G3.png" alt="3D hero" loading="lazy"/>
                     </div>
                     <div class="project-tags">
                         <span class="project-tag">3D Modeling</span>
@@ -1411,7 +1400,7 @@
                     </div>
                 </div>
                 <div class="contact-gif-wrap">
-                    <img id="contactGif" src="contact.png" alt="Hui Yi waving" decoding="async" onerror="this.style.display='none'" />
+                    <img id="contactGif" src="portfolio/contact.png" alt="Hui Yi waving" decoding="async" onerror="this.style.display='none'" />
                 </div>
             </div>
         </div>
@@ -1522,7 +1511,6 @@
 
         /* ═══════════════════════════════
            CAROUSEL + MODAL
-           FIX: full video support added
         ═══════════════════════════════ */
         var carouselIndex = 0;
         var carouselSlides = []; // {type:'image'|'video', src:string}
@@ -1535,7 +1523,6 @@
             carouselSlides = [];
             carouselIndex = 0;
 
-            // Combine images then videos into unified slides array
             (images || []).forEach(function(src) {
                 carouselSlides.push({ type: 'image', src: src });
             });
@@ -1556,7 +1543,6 @@
                     slideEl.className = 'modal-carousel-slide';
 
                     if (slide.type === 'video') {
-                        // FIX: build a proper video element
                         var vid = document.createElement('video');
                         vid.src = slide.src;
                         vid.controls = true;
@@ -1565,16 +1551,14 @@
                         vid.loop = false;
                         vid.playsInline = true;
                         vid.setAttribute('playsinline', '');
-                        vid.style.cssText = 'width:100%;height:100%;object-fit:contain;display:block;background:#000;';
+                        vid.style.cssText = 'width:100%;height:100%;object-fit:cover;display:block;background:#000;';
                         slideEl.appendChild(vid);
 
-                        // Video badge indicator
                         var badge = document.createElement('div');
                         badge.className = 'slide-video-badge';
                         badge.innerHTML = '<svg viewBox="0 0 24 24"><path d="M5 3l14 9-14 9V3z"/></svg> VIDEO';
                         slideEl.appendChild(badge);
                     } else {
-                        // Image slide
                         var img = document.createElement('img');
                         img.src = slide.src;
                         img.alt = 'Project image ' + (i + 1);
@@ -1585,11 +1569,10 @@
 
                     track.appendChild(slideEl);
 
-                    // Dot indicator — video slides show a triangle icon dot
                     var dot = document.createElement('div');
                     dot.className = 'carousel-dot' + (i === 0 ? ' active' : '');
                     if (slide.type === 'video') {
-                        dot.style.borderRadius = '2px'; // square dot for video slides
+                        dot.style.borderRadius = '2px';
                     }
                     dot.addEventListener('click', (function(idx) {
                         return function() { goToSlide(idx); };
@@ -1603,7 +1586,6 @@
         }
 
         function stopAllCarouselVideos() {
-            // Pause any playing video when navigating away from its slide
             var videos = document.querySelectorAll('#modal-carousel-track video');
             videos.forEach(function(v) {
                 v.pause();
@@ -1624,7 +1606,7 @@
         }
 
         function goToSlide(idx) {
-            stopAllCarouselVideos(); // FIX: pause video when sliding away
+            stopAllCarouselVideos();
             carouselIndex = Math.max(0, Math.min(idx, carouselSlides.length - 1));
             updateCarouselUI();
         }
@@ -1636,7 +1618,6 @@
         function bindCarouselSwipe() {
             var carousel = document.getElementById('modal-carousel');
             var startX = 0;
-            // Remove old listeners by cloning (simple approach)
             var newCarousel = carousel.cloneNode(false);
             while (carousel.firstChild) newCarousel.appendChild(carousel.firstChild);
             carousel.parentNode.replaceChild(newCarousel, carousel);
@@ -1652,7 +1633,6 @@
 
             var isDragging = false, dragStartX = 0;
             c.addEventListener('mousedown', function(e) {
-                // Don't interfere with video controls
                 if (e.target.tagName === 'VIDEO') return;
                 isDragging = true;
                 dragStartX = e.clientX;
@@ -1665,7 +1645,6 @@
             });
             c.addEventListener('mouseleave', function() { isDragging = false; });
 
-            // Re-wire arrow buttons since we cloned
             var prevBtn = c.querySelector('#carousel-prev') || document.getElementById('carousel-prev');
             var nextBtn = c.querySelector('#carousel-next') || document.getElementById('carousel-next');
             if (prevBtn) prevBtn.onclick = function() { carouselNav(-1); };
@@ -1683,13 +1662,12 @@
             buildCarousel(data.images || [], data.videos || []);
             document.getElementById('project-modal-overlay').classList.add('open');
             document.body.style.overflow = 'hidden';
-            // Scroll modal back to top
             var modal = document.getElementById('project-modal');
             if (modal) modal.scrollTop = 0;
         }
 
         function closeModal() {
-            stopAllCarouselVideos(); // FIX: stop videos on close
+            stopAllCarouselVideos();
             document.getElementById('project-modal-overlay').classList.remove('open');
             document.body.style.overflow = '';
         }
@@ -1699,14 +1677,12 @@
         }
 
         /* ═══════════════════════════════
-           LIGHTBOX (images only)
+           LIGHTBOX
         ═══════════════════════════════ */
         var lightboxIndex = 0;
-        // Only image slides are lightboxable
         var lightboxImages = [];
 
         function openLightbox(slideIdx) {
-            // Build index map: only image slides
             lightboxImages = [];
             var imageSlideIndices = [];
             carouselSlides.forEach(function(s, i) {
@@ -1715,7 +1691,6 @@
                     imageSlideIndices.push(i);
                 }
             });
-            // Find which lightbox image matches the clicked slide
             lightboxIndex = imageSlideIndices.indexOf(slideIdx);
             if (lightboxIndex < 0) lightboxIndex = 0;
             updateLightbox();
@@ -1815,21 +1790,16 @@
 
         /* ═══════════════════════════════
            PROJECT FILTER TABS
-           FIX 5: use '' instead of 'flex' to respect media query display values
         ═══════════════════════════════ */
         function filterProjects(cat, btn) {
             document.querySelectorAll('.proj-tab').forEach(function (t) { t.classList.remove('active'); });
             btn.classList.add('active');
             document.querySelectorAll('.project-item').forEach(function (item) {
                 var iCat = parseInt(item.getAttribute('data-category'), 10);
-                // FIX 5: empty string restores the CSS-defined display (flex on desktop, block on mobile)
                 item.style.display = (cat === 0 || iCat === cat) ? '' : 'none';
             });
         }
 
-        /* ═══════════════════════════════
-           RESIZE: recalc accordion height
-        ═══════════════════════════════ */
         window.addEventListener('resize', function () {
             var openBody = document.querySelector('.svc-item.open .svc-body');
             if (openBody) openBody.style.maxHeight = openBody.scrollHeight + 'px';
